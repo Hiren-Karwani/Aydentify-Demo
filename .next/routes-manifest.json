@@ -3,8 +3,17 @@
   "pages404": true,
   "appType": "app",
   "caseSensitive": false,
-  "basePath": "",
+  "basePath": "/Aydentify-Demo",
   "redirects": [
+    {
+      "source": "/Aydentify-Demo/",
+      "destination": "/Aydentify-Demo",
+      "basePath": false,
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^/Aydentify-Demo/$"
+    },
     {
       "source": "/:path+/",
       "destination": "/:path+",
@@ -17,7 +26,13 @@
   "headers": [],
   "onMatchHeaders": [],
   "rewrites": {
-    "beforeFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/Aydentify-Demo//_next/:path+",
+        "destination": "/Aydentify-Demo/_next/:path+",
+        "regex": "^/Aydentify-Demo//_next(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))(?:/)?$"
+      }
+    ],
     "afterFiles": [],
     "fallback": []
   },
