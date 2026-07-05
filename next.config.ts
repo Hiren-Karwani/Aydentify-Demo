@@ -1,13 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',  // Enables static export
+  output: 'export',
   images: {
-    unoptimized: true, // Required for GitHub Pages (no Next.js Image Optimization)
+    unoptimized: true, 
   },
-  // If your repo is named 'Aydentify-Demo', uncomment the lines below:
-   basePath: '/Aydentify-Demo',
-   assetPrefix: '/Aydentify-Demo/',
+  basePath: '/Aydentify-Demo',
+  // Remove or comment out assetPrefix
+  // assetPrefix: '/Aydentify-Demo/',
 };
 
 export default nextConfig;

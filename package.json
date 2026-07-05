@@ -4,11 +4,11 @@
   "private": true,
   "homepage": "https://Hiren-Karwani.github.io/Aydentify-Demo",
   "scripts": {
-     "dev": "next dev",
-    "build": "next build",
-    "export": "next export", 
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+  "dev": "next dev",
+  "build": "next build",
+  "export": "next export", 
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d out -t true" 
   },
   "dependencies": {
     "clsx": "^2.1.1",
