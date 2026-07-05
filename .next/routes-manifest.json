@@ -26,13 +26,7 @@
   "headers": [],
   "onMatchHeaders": [],
   "rewrites": {
-    "beforeFiles": [
-      {
-        "source": "/Aydentify-Demo//_next/:path+",
-        "destination": "/Aydentify-Demo/_next/:path+",
-        "regex": "^/Aydentify-Demo//_next(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))(?:/)?$"
-      }
-    ],
+    "beforeFiles": [],
     "afterFiles": [],
     "fallback": []
   },
